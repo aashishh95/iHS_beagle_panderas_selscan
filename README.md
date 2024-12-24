@@ -1,2 +1,33 @@
-# iHS_beagle_panderas_selscan
+![image](https://github.com/user-attachments/assets/3ffe0e97-0185-4dfa-89b7-f819da924fe1)# iHS_beagle_panderas_selscan
 This workflow automates the computation of integrated Haplotype Scores (iHS) to detect signals of selection in genomic data. The script performs tasks like chromosome splitting, phasing, population filtering, variant polarization, and finally, iHS calculation.
+
+#Tools required
+
+PLINK 2: For chromosome splitting and data preprocessing.
+Beagle: For genotype phasing.
+BCFtools: For VCF filtering and indexing.
+Tabix: For creating indexes on VCF files.
+Panderas: For polarizing variants using ancestral allele data.
+Selscan: For iHS calculations.
+Norm: For normalizing iHS results.
+awk: For processing and formatting output data.
+Python: Script orchestration and argument handling.
+
+
+#Input file
+
+PLINK Binary Files: .bed, .bim, .fam.
+Sample File: A .txt file containing the list of individuals.
+Recombination Map Files: One per chromosome.
+Ancestral Allele Files: Pre-formatted for each chromosome.
+Genetic Map Files: Modified genetic map files for polarization.
+
+#output files
+
+
+Chromosome-specific VCF files (.vcf.gz) and their indexes (.tbi).
+Phased VCF files for each chromosome.
+Population-filtered VCF files.
+Polarized haplotype files.
+iHS results in .csv format.
+
