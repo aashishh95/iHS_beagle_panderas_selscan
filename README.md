@@ -45,11 +45,11 @@ Example of Format(tab-delimited format):
 16050103  A
 16055683  T
 ```
-Ancestral allele file modification can be done as(in command line):
 
-#converting the ensembl ancestral allele file to the format supported by polaris
+Ancestral allele file modification (in command line):
 
 ```bash
+#converting the ensembl ancestral allele file to the format supported by polaris
 for i in {1..22}; do
     input_file="homo_sapiens_ancestor_${i}.fa"
     output_file="hs_ancestral_chr${i}_hg19_formatted.txt"
