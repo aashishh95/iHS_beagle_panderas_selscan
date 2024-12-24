@@ -26,12 +26,16 @@ Ancestral Allele Files: Pre-formatted for each chromosome.
 
 Genetic Map Files: Modified genetic map files for polarization.
 
-#output files
+# Output files
 
 
 Chromosome-specific VCF files (.vcf.gz) and their indexes (.tbi).
+
 Phased VCF files for each chromosome.
+
 Population-filtered VCF files.
+
 Polarized haplotype files.
+
 iHS results in .csv format.
 
