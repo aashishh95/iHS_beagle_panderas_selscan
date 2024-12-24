@@ -44,12 +44,16 @@ Example of Format:
 16055683  T
 
 Ancestral allele file modification can be done as(in command line):
+
 #converting the ensembl ancestral allele file to the format supported by polaris
+
+```bash
 for i in {1..22}; do
     input_file="homo_sapiens_ancestor_${i}.fa"
     output_file="hs_ancestral_chr${i}_hg19_formatted.txt"
     grep -v "^>" "$input_file" | tr -d '\n' | fold -w1 | nl > "$output_file"
 done
+```
 
 ## Recombination Map Files for Polarization: One per chromosome. 
 The PLINK genetic map files (i.e., reference maps from https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) are provided in DropBox (https://www.dropbox.com/scl/fo/b3a9z16sqjvksprqudlpg/ACv4xl3Nk9HHZP0m4Em0CVI?rlkey=7dqtaioskwnk2u8mgcx1osui9&st=ultsv8k1&dl=0). Genetic map files should contain the genetic position and physical position in white space delimited columns.
@@ -91,8 +95,6 @@ Phased VCF files for each chromosome.
 Population-filtered VCF files.
 
 Polarized haplotype files.
-
-
 
 iHS results in .csv format.
 
