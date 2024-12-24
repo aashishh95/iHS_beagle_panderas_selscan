@@ -1,7 +1,7 @@
 # Overview
 This workflow automates the computation of integrated Haplotype Scores (iHS) to detect signals of selection in genomic data. The script performs tasks like chromosome splitting, phasing, population filtering, variant polarization, and finally, iHS calculation.
 
-#Tools required
+# Required Tools for this workflow
 
 PLINK 2: For chromosome splitting and data preprocessing.
 Beagle: For genotype phasing.
@@ -14,12 +14,16 @@ awk: For processing and formatting output data.
 Python: Script orchestration and argument handling.
 
 
-#Input file
+# Required Input file
 
 PLINK Binary Files: .bed, .bim, .fam.
+
 Sample File: A .txt file containing the list of individuals.
+
 Recombination Map Files: One per chromosome.
+
 Ancestral Allele Files: Pre-formatted for each chromosome.
+
 Genetic Map Files: Modified genetic map files for polarization.
 
 #output files
