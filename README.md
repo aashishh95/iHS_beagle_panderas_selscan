@@ -72,6 +72,12 @@ See Format: (tab deliminated columns)
 22	.	0.027325	16054713
 22	.	0.029307	16054960
 
+# Script execution
+
+Please check bash_iHS_panderas.sh. I usually create a conda environment after installing selscan within the created conda environment, activate the conda environment and run the bash script as job.
+chmod +x bash_iHS_panderas.sh
+sbatch bash_iHS_panderas.sh
+
 # Output files
 Chromosome-specific VCF files (.vcf.gz) and their indexes (.tbi).
 
@@ -80,6 +86,8 @@ Phased VCF files for each chromosome.
 Population-filtered VCF files.
 
 Polarized haplotype files.
+
+
 
 iHS results in .csv format.
 
