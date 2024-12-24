@@ -14,9 +14,9 @@ Selscan: For iHS calculations.
 
 ### PLINK Binary Files: 
 ```
-.bed,
-.bim,
-.fam.
+.bed
+.bim
+.fam
 ```
 ### Sample File: A .txt file containing the list of individuals. 
 Format (FID_IID):
