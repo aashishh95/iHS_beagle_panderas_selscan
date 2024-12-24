@@ -75,8 +75,13 @@ See Format: (tab deliminated columns)
 # Script execution
 
 Please check bash_iHS_panderas.sh. I usually create a conda environment after installing selscan within the created conda environment, activate the conda environment and run the bash script as job.
+
+```bash
 chmod +x bash_iHS_panderas.sh
+
 sbatch bash_iHS_panderas.sh
+```
+
 
 # Output files
 Chromosome-specific VCF files (.vcf.gz) and their indexes (.tbi).
