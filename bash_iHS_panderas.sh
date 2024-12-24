@@ -49,13 +49,13 @@ fi
 python /scratch/ag10818/github_popgen/iHS_panderas/iHS_panderas.v1.py \
     --plink_file dataset \
     --sample_file population \
-    --ancestral_dir /scratch/ag10818/github_popgen/iHS_panderas/ancestral_allele_ensembl_hg19 \
-    --panderas_path /scratch/ag10818/github_popgen/iHS_panderas/Panderas \
-    --beagle_jar /scratch/ag10818/softwares/beagle.28Jun21.220.jar \
-    --recomb_map_dir /scratch/ag10818/github_popgen/iHS_panderas/recomb_map_hg19 \
-    --genetic_map_dir /scratch/ag10818/github_popgen/iHS_panderas/recomb_map_hg19
+    --ancestral_dir /path_to/ancestral_allele/dir/ancestral_allele_ensembl_hg19 \
+    --panderas_path /path_to_Paderas_dir/Panderas \
+    --beagle_jar /path_to_beagle_jar_file/beagle.28Jun21.220.jar \
+    --recomb_map_dir /path_to_recombination_map \
+    --genetic_map_dir /path_to_recombination_map
 
 #concatenate all the csv files
 for i in {1..22}; do
-    cat "population_chr${i}_iHS.csv" >> brokpa_samples_allChr.csv
+    cat "population_chr${i}_iHS.csv" >> population_allChr.csv
 done
