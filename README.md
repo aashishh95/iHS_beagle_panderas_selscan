@@ -33,14 +33,13 @@ Format (FID_IID):
 ```
 ### Ancestral Allele Files: Pre-formatted for each chromosome.
 
-Given the space limitations on GitHub, the Homo_sapiens_hg38_reference file from Ensembl for each chromosome (https://ftp.ensembl.org/pub/release-112/fasta/ancestral_alleles/) is stored separately in DropBox (https://www.dropbox.com/scl/fo/0du8z7xoeqs5qqr73qk2s/ADuGddGTZXwUIeZkmQZ-geM?rlkey=tn11q5yt2yohyuu5q3ube2x88&st=qzjtapey&dl=0) and are available for downloaded. If users wish to incorporate a different ancestral allele reference file, they will need to make sure the file is in a tab-delimited format (please see below).
-
+https://ftp.ensembl.org/pub/release-112/fasta/ancestral_alleles/ 
 For hg37 please visit: https://ftp.ensembl.org/pub/release-75/fasta/ancestral_alleles/
 Try opening the link with google Chrome. Download folders Homo_Sapiens_ancestor_grch37.tz
 
 Basic Format
 Position  Allele
-Example of Format:
+Example of Format(tab-delimited format):
 ```
 16050075  G
 16050103  A
@@ -59,13 +58,13 @@ done
 ```
 
 ### Recombination Map Files for Polarization: One per chromosome. 
-The PLINK genetic map files (i.e., reference maps from https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) are provided in DropBox (https://www.dropbox.com/scl/fo/b3a9z16sqjvksprqudlpg/ACv4xl3Nk9HHZP0m4Em0CVI?rlkey=7dqtaioskwnk2u8mgcx1osui9&st=ultsv8k1&dl=0). Genetic map files should contain the genetic position and physical position in white space delimited columns.
-
+The PLINK genetic map files (i.e., reference maps from https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) 
 For GRCh37: https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh37.map.zip
 
 Basic Format:
 GeneticDistance PhysicalPosition
-Example of Format:
+Example of Format(white space delimited columns).
+:
 ```
 16050000 0.123456   
 16060000 0.125678  
