@@ -33,11 +33,12 @@ Format (FID_IID):
 ```
 ### Ancestral Allele Files: Pre-formatted for each chromosome.
 
-https://ftp.ensembl.org/pub/release-112/fasta/ancestral_alleles/ 
-For hg37 please visit: https://ftp.ensembl.org/pub/release-75/fasta/ancestral_alleles/
-Try opening the link with google Chrome. Download folders Homo_Sapiens_ancestor_grch37.tz
+The ancestral allele file for GRCh38 can be downloade from https://ftp.ensembl.org/pub/release-112/fasta/ancestral_alleles/ 
+For GRCh37 please visit: https://ftp.ensembl.org/pub/release-75/fasta/ancestral_alleles/
+Try opening the link with Google Chrome(it didn't work with edge in my case). 
+Download folders Homo_Sapiens_ancestor_grch37.tz
 
-Basic Format
+Basic Format required by Panderas
 Position  Allele
 Example of Format(tab-delimited format):
 ```
@@ -46,7 +47,7 @@ Example of Format(tab-delimited format):
 16055683  T
 ```
 
-Ancestral allele file modification (in command line):
+Thus the ancestral allele file should be modified into the format as specified above. You can try by your own or use the script below (in linux):
 
 ```bash
 #converting the ensembl ancestral allele file to the format supported by polaris
@@ -59,9 +60,12 @@ done
 
 ### Recombination Map Files for Polarization: One per chromosome. 
 The PLINK genetic map files (i.e., reference maps from https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/) 
+For GRCh38: https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh38.map.zip
 For GRCh37: https://bochet.gcc.biostat.washington.edu/beagle/genetic_maps/plink.GRCh37.map.zip
 
-Basic Format:
+Basic Format for genetic map is different for Beagle and Panderas:
+The one that we download from the above specified website is in format accepted by beagle, while the format required for Panderas is:
+
 GeneticDistance PhysicalPosition
 Example of Format(white space delimited columns).
 :
@@ -70,7 +74,7 @@ Example of Format(white space delimited columns).
 16060000 0.125678  
 16070000 0.128901   
 ```
-### Recombination Map Files for Polarization: One per chromosome. 
+### Recombination Map Files for BeaglePolarization: One per chromosome. 
 See Format: (tab deliminated columns)
 ```
 22	.	0.010291	16052618
